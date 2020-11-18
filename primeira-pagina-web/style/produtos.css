@@ -1,5 +1,22 @@
 header{
     background: #BBBBBB;
+    padding:20px 0;
+}
+.container{
+    width: 940px;
+}
+
+.container{
+    position:relative;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+nav{
+    position: absolute;
+    top:120px;
+    right:0;
 }
 
 nav a{
@@ -13,4 +30,36 @@ nav a{
 nav li{
     display: inline;
     margin: 0 0 0 15px;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: black solid;
+    border-radius: 5%;
+
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.prod-desc{
+    font-size: 18px;
+}
+.prod-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
