@@ -1,51 +1,104 @@
-
-body{
-}
-
-#banner{
-    width: 100%;
-}
-
-.main{
-    background: #CCCCCC;  
-    padding:30px;
-}
-
-p{
-    text-align: center;
-}
-.titulo-principal{
-    padding-left: 20px;
-}
-.titulo-centralizado {
-    text-align: center;
-}
-
-#mission{
-    font-size: 20px;
-}
-
-em strong{ /* todos os strong que estâo dentro dos em*/
-    color: darkred;
-}
-
-.beneficios{
-    background: #FFFFFF;
+header{
+    background: #f2f4f7;
     padding:20px;
 }
 
+.menu-container{
+    width: 940px;
+    position: relative;
+    margin: auto;
+}
 
-.img-beneficios{
+nav{
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f2f4f7;
+    padding: 15px;
+    background: #020205 ;
+}
+
+nav a:hover{
+    background: #e43a19;
+    text-decoration: underline;
+}
+/*INICIO DO MAIN*/
+main{
+    width: 940px;
+    margin: auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+.titles{
+    color: #e43a19;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+main p strong{
+    font-weight: bold;
+}
+
+.mission{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.mission em{
+    font-style: italic;
+}
+
+.mission em strong{
+    color: #111f4d;
+}
+
+.beneficios{
+    display: inline-block;
+}
+
+.ben-list{
+    width: 45%;
+}
+.ben-item{
+    list-style-type: disc;
+}
+.beneficios img{
     width: 50%;
 }
 
-ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right 15%: ;
+
+
+/*Footer*/
+footer{
+    text-align: center;
+    background: url("../img/bg.jpg");
+    padding: 20px 0 20px;
 }
 
-.itens{
-    font-style: italic;
+.copyright{
+    color: #f2f4f7;
+    font-size: 13px;
+    margin: 20px;
 }
