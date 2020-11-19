@@ -48,7 +48,7 @@ main{
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    padding:20px;
+    margin:40px;
 }
 
 main p {
@@ -75,20 +75,22 @@ main p strong{
 }
 
 .beneficios{
-    display: inline-block;
+    margin: 20px 0;
 }
 
 .ben-list{
-    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 0 10% 0 9%;
 }
 .ben-item{
     list-style-type: disc;
+    font-size: 1.2rem;
 }
 .beneficios img{
     width: 50%;
 }
-
-
 
 /*Footer*/
 footer{
