@@ -33,63 +33,50 @@ nav a:hover{
     background: #e43a19;
     text-decoration: underline;
 }
-/*INICIO DO MAIN*/
-main{
+
+.produtos {
     width: 940px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.banner{
-    width: 100%;
-}
-
-.titles{
-    color: #e43a19;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin:40px;
-}
-
-main p {
-    text-align: justify;
-    font-size: 1.2rem;
-}
-
-main p strong{
-    font-weight: bold;
-}
-
-.mission{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 1.5rem;
-}
-
-.mission em{
-    font-style: italic;
-}
-
-.mission em strong{
-    color: #111f4d;
-}
-
-.beneficios{
-    margin: 20px 0;
-}
-
-.ben-list{
+.produtos li{
     display: inline-block;
-    vertical-align: top;
+    text-align: center;
     width: 30%;
-    padding: 0 10% 0 9%;
+    vertical-align: top;
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
 }
-.ben-item{
-    list-style-type: disc;
-    font-size: 1.2rem;
+
+.produtos li:hover{
+    border-color: slateblue;
 }
-.beneficios img{
-    width: 50%;
+
+.produtos li:hover h2{
+    font-size: 34px;    
+}
+
+.produtos li:active{
+    border-color: red ;
+}
+
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.prod-desc{
+    font-size: 18px;
+}
+.prod-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /*Footer*/
