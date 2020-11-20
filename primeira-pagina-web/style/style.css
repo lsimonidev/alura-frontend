@@ -63,7 +63,7 @@ main {
 }
 
 .produtos li:active{
-    border-color: red ;
+    border-color: #e43a19 ;
 }
 
 
@@ -85,18 +85,58 @@ form{
     margin: 40px 0;
 }
 
-form label{
+form label, form legend{
     display: block;
     font-size: 1.2rem;
     margin: 0 0 10px;
 }
 
-form input{
+.input-padrao{
     display:block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
     font-size: 1.2rem;
+}
+
+.submit{
+    width: 50%;
+    padding: 15px 0;
+    background-color: white;
+    border: 1px solid #e43a19 ;
+    border-radius: 5px;
+    color: #e43a19;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.checkbox{
+    margin: 20px 5px 0;
+}
+
+.submit:hover{
+    background-color: #e43a19;
+    color: white;
+    transform: scale(1.2);
+
+}
+
+
+table{
+    margin: 20px 0 40px
+}
+
+table thead{
+    background-color: #020205 ;
+    color: white;
+    font-weight: bold;
+}
+
+table td, table th {
+    border: solid 1px #020205;
+    padding: 8px 20px;
 }
 
 
