@@ -1,3 +1,6 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 header{
     background: #f2f4f7;
     padding:20px;
@@ -33,14 +36,106 @@ nav a:hover{
     background: #e43a19;
     text-decoration: underline;
 }
-
-main {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+/*Main Style*/
+main{
+    background: #f2f4f7;;
+}
+.banner{
+    width: 100%;
 }
 
-/* products page */
+.main-title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    clear: left;
+}
+
+
+.container{
+    padding: 3rem 0;
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+.container p {
+    margin: 0 0 1rem;
+}
+
+.container strong{
+    font-weight: bold;
+}
+
+.container em{
+    font-style: italic;
+}
+.conteudo-ben{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.beneficios{
+    padding: 3rem 0;   
+    background: #888888; 
+}
+
+.ben-list{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ben-item{
+    line-height: 1.5rem;
+}
+
+.ben-item::before{
+    content: "🟊 ";
+}
+
+.ben-item:first-child{
+    font-weight: bold;
+}
+
+.img-beneficios{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #020205;
+}
+
+.img-beneficios:hover{
+    opacity: 0.3;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.map{
+    padding: 3rem 0;    
+    background: linear-gradient(#f2f4f7,#888888);
+}
+
+.map-content{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.map p{
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+.video{
+    width: 560px;
+    margin: 2rem auto;
+
+}
+
+/* products style */
 .produtos li{
     display: inline-block;
     text-align: center;
@@ -152,4 +247,22 @@ footer{
     color: #f2f4f7;
     font-size: 13px;
     margin: 20px;
+}
+
+@media screen and (max-width: 480px){
+    .menu-container, .container, .map-content, .conteudo-ben, .video{
+        width:auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position:static;
+    }
+
+    nav a{
+        font-size: 1.1rem;
+    }
 }
