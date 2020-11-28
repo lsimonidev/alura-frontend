@@ -1,5 +1,15 @@
+import { ContaCorrente } from "./ContaCorrente.js";
+
 export class Cliente{
     nome; 
     cpf; 
-    contaCorrente;
+    _contaCorrente;
+    
+    set contaCorrente(novoValor){
+        if(novoValor instanceof ContaCorrente) this._contaCorrente = novoValor; 
+    }
+
+    get contaCorrente(){
+        return this._contaCorrente;
+    }
 }
