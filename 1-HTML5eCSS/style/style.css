@@ -1,268 +1,267 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-header{
-    background: #f2f4f7;
-    padding:20px;
+@charset "UTF-8";
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.menu-container{
-    width: 940px;
-    position: relative;
-    margin: auto;
+header {
+  background: #f2f4f7;
+  padding: 20px;
 }
 
-nav{
-    position: absolute;
-    top: 45%;
-    right: 0;
+.menu-container {
+  width: 940px;
+  position: relative;
+  margin: auto;
+}
+
+nav {
+  position: absolute;
+  top: 45%;
+  right: 0;
 }
 
 nav li {
-    display: inline;
-    margin-left: 15px;
-    
+  display: inline;
+  margin-left: 15px;
 }
 
-nav a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #f2f4f7;
-    padding: 15px;
-    background: #020205 ;
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #f2f4f7;
+  padding: 15px;
+  background: #020205;
 }
 
-nav a:hover{
-    background: #e43a19;
-    text-decoration: underline;
+nav a:hover {
+  background: #e43a19;
+  text-decoration: underline;
 }
+
 /*Main Style*/
-main{
-    background: #f2f4f7;;
-}
-.banner{
-    width: 100%;
+main {
+  background: #f2f4f7;
 }
 
-.main-title{
-    text-align: center;
-    font-size: 2rem;
-    margin: 0 0 2rem;
-    clear: left;
+.banner {
+  width: 100%;
 }
 
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  clear: left;
+}
 
-.container{
-    padding: 3rem 0;
-    width: 940px;
-    margin: 0 auto;
-    
+.container {
+  padding: 3rem 0;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .container p {
-    margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
-.container strong{
-    font-weight: bold;
+.container strong {
+  font-weight: bold;
 }
 
-.container em{
-    font-style: italic;
-}
-.conteudo-ben{
-    width: 640px;
-    margin: 0 auto;
+.container em {
+  font-style: italic;
 }
 
-.beneficios{
-    padding: 3rem 0;   
-    background: #888888; 
+.conteudo-ben {
+  width: 640px;
+  margin: 0 auto;
 }
 
-.ben-list{
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+.beneficios {
+  padding: 3rem 0;
+  background: #888888;
 }
 
-.ben-item{
-    line-height: 1.5rem;
+.ben-list {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.ben-item::before{
-    content: "🟊 ";
+.ben-item {
+  line-height: 1.5rem;
 }
 
-.ben-item:first-child{
-    font-weight: bold;
+.ben-item::before {
+  content: "🟊 ";
 }
 
-.img-beneficios{
-    width: 60%;
-    transition: 400ms;
-    box-shadow: 10px 10px 10px 0 #020205;
+.ben-item:first-child {
+  font-weight: bold;
 }
 
-.img-beneficios:hover{
-    opacity: 0.3;
+.img-beneficios {
+  width: 60%;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px 0 #020205;
 }
 
-.utensilios{
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
+.img-beneficios:hover {
+  opacity: 0.3;
 }
 
-.map{
-    padding: 3rem 0;    
-    background: linear-gradient(#f2f4f7,#888888);
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
-.map-content{
-    width: 940px;
-    margin: 0 auto;
+.map {
+  padding: 3rem 0;
+  background: linear-gradient(#f2f4f7, #888888);
 }
 
-.map p{
-    margin: 0 0 2rem;
-    text-align: center;
+.map-content {
+  width: 940px;
+  margin: 0 auto;
 }
 
-.video{
-    width: 560px;
-    margin: 2rem auto;
+.map p {
+  margin: 0 0 2rem;
+  text-align: center;
+}
 
+.video {
+  width: 560px;
+  margin: 2rem auto;
 }
 
 /* products style */
-.produtos li{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin:0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
 }
 
-.produtos li:hover{
-    border-color: slateblue;
+.produtos li:hover {
+  border-color: slateblue;
 }
 
-.produtos li:hover h2{
-    font-size: 34px;    
+.produtos li:hover h2 {
+  font-size: 34px;
 }
 
-.produtos li:active{
-    border-color: #e43a19 ;
+.produtos li:active {
+  border-color: #e43a19;
 }
 
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
 
-.produtos h2{
-    font-size: 30px;
-    font-weight: bold;
+.prod-desc {
+  font-size: 18px;
 }
-.prod-desc{
-    font-size: 18px;
-}
-.prod-preco{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
+
+.prod-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /*contacts style*/
-form{
-    margin: 40px 0;
+form {
+  margin: 40px 0;
 }
 
-form label, form legend{
-    display: block;
-    font-size: 1.2rem;
-    margin: 0 0 10px;
+form label, form legend {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0 0 10px;
 }
 
-.input-padrao{
-    display:block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-    font-size: 1.2rem;
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  font-size: 1.2rem;
 }
 
-.submit{
-    width: 50%;
-    padding: 15px 0;
-    background-color: white;
-    border: 1px solid #e43a19 ;
-    border-radius: 5px;
-    color: #e43a19;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 300ms all;
+.submit {
+  width: 50%;
+  padding: 15px 0;
+  background-color: white;
+  border: 1px solid #e43a19;
+  border-radius: 5px;
+  color: #e43a19;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms all;
 }
 
-.checkbox{
-    margin: 20px 5px 0;
+.checkbox {
+  margin: 20px 5px 0;
 }
 
-.submit:hover{
-    background-color: #e43a19;
-    color: white;
-    transform: scale(1.2);
-
+.submit:hover {
+  background-color: #e43a19;
+  color: white;
+  transform: scale(1.2);
 }
 
-
-table{
-    margin: 20px 0 40px
+table {
+  margin: 20px 0 40px;
 }
 
-table thead{
-    background-color: #020205 ;
-    color: white;
-    font-weight: bold;
+table thead {
+  background-color: #020205;
+  color: white;
+  font-weight: bold;
 }
 
 table td, table th {
-    border: solid 1px #020205;
-    padding: 8px 20px;
+  border: solid 1px #020205;
+  padding: 8px 20px;
 }
-
-
 
 /*Footer*/
-footer{
+footer {
+  text-align: center;
+  background: url("../img/bg.jpg");
+  padding: 20px 0 20px;
+}
+
+.copyright {
+  color: #f2f4f7;
+  font-size: 13px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-container, .container, .map-content, .conteudo-ben, .video {
+    width: auto;
+  }
+
+  h1 {
     text-align: center;
-    background: url("../img/bg.jpg");
-    padding: 20px 0 20px;
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
 }
 
-.copyright{
-    color: #f2f4f7;
-    font-size: 13px;
-    margin: 20px;
-}
-
-@media screen and (max-width: 480px){
-    .menu-container, .container, .map-content, .conteudo-ben, .video{
-        width:auto;
-    }
-
-    h1{
-        text-align: center;
-    }
-
-    nav{
-        position:static;
-    }
-
-    nav a{
-        font-size: 1.1rem;
-    }
-}
+/*# sourceMappingURL=style.css.map */
