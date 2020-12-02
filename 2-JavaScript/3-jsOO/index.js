@@ -1,17 +1,17 @@
-
-//"npm init" no terminal para colocar o projeto como um modulo.
 import {Cliente} from "./Cliente.js"
 import {ContaCorrente} from "./ContaCorrente.js"
 
-const clienteLaura = new Cliente("Laura Simoni", 11122233309);
-clienteLaura.contaCorrente = new ContaCorrente(1001, 1000);
+const cliente1 = new Cliente("Ricardo", 11122233309);
+const cliente2 = new Cliente("Alice", 88822233309);
 
-const clienteHugo = new Cliente("Hugo Fortes", 99911199921);
-clienteHugo.contaCorrente = new ContaCorrente(1001, 0);
 
-clienteLaura.contaCorrente.transferir(200, clienteHugo.contaCorrente);
+const contaCorrenteRicardo = new ContaCorrente(1001, cliente1);
+contaCorrenteRicardo.depositar(500);
+contaCorrenteRicardo.sacar(100);
 
-console.log(clienteLaura);
-console.log(clienteHugo);
+const conta2 = new ContaCorrente(102, cliente2);
 
-console.log(ContaCorrente.numeroDeContas);
+let valor = 200;
+contaCorrenteRicardo.tranferir(valor, conta2);
+
+console.log(contaCorrenteRicardo);
