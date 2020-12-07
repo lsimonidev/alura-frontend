@@ -12,5 +12,6 @@ export class SistemaAutenticacao{
     static ehAutenticavel(autenticavel){
         return "autenticar" in autenticavel &&  //Verifica se a chave existe dentro do objeto
         autenticavel.autenticar instanceof Function; // e se esta chave é uma função
+        
     }
 }
