@@ -1,20 +1,19 @@
-import {Cliente} from "./Cliente.js"
-import {ContaSalario} from "./Conta/ContaSalario.js"
-import {ContaCorrente} from "./Conta/ContaCorrente.js"
-import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
+import { Cliente } from "./Cliente.js"
+import { SistemaAutenticacao } from "./SistemaAutenticacao.js"
+import { Gerente } from "./Funcionario/Gerente.js"
+import { Diretor } from "./Funcionario/Diretor.js";
 
-const cliente1 = new Cliente("Ricardo", 11122233309);
 
-const contaCorrenteRicardo = new ContaCorrente(1001, cliente1);
-contaCorrenteRicardo.depositar(500);
-contaCorrenteRicardo.sacar(100);
+const diretor = new Diretor("Rodrigo", 10000, 12345679900);
+diretor.setSenha("12345");
+const gerente = new Gerente("Ivo", 50000, 98765432100);
+gerente.setSenha("123");
 
-const contaPoupancaRicardo = new ContaPoupanca(500,1001, cliente1);
-contaPoupancaRicardo.sacar(100);
+let estaLogado = SistemaAutenticacao.login(diretor, "12345");
+console.log(estaLogado);
+estaLogado = SistemaAutenticacao.login(gerente, "123");
+console.log(estaLogado);
 
-const contaSalario = new ContaSalario(cliente1);
-contaSalario.depositar(300);
-contaSalario.sacar(20);
-
-console.log(contaCorrenteRicardo);
-console.log(contaSalario);
+const cliente = new Cliente("Laura", 99965186120, "456");
+estaLogado = SistemaAutenticacao.login(cliente, "456");
+console.log("a Cliente está logada?",estaLogado);
