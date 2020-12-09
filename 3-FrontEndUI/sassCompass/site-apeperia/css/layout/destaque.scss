@@ -6,30 +6,33 @@
     color: $cor-clara;
     height: 330px;
     padding-top: 10em;
-  }
-  
-  .destaque p {
-    width: 30em;
-  }
-  
-  .destaque p:first-child {
-    width: 30em;
-    font-size: 1.3em;
-    line-height: 1.1;
-  }
-  
-  .destaque p:first-child:first-line {
-    font-size: 2.2em;
-    font-weight: bold;
-  }
-  
-  .destaque button {
-    margin-top: 1em;
-    background: $cor-destaque;
-    border: 0;
-    padding: .6em;
-    font-size: 1.2em;
-    @include borda-arredondada(50px);
-    @include sombra-padrao;
-    font-weight: bold;
+
+    p {
+      width: 30em;
+      &:first-child {
+        width: 30em;
+        font-size: 1.3em;
+        line-height: 1.1;
+        &:first-line {
+          font-size: 2.2em;
+          font-weight: bold;
+        }
+      }
+    }
+
+    button {
+      margin-top: 1em;
+      background: $cor-destaque;
+      border: 0;
+      padding: .6em;
+      font-size: 1.2em;
+      @include borda-arredondada(50px);
+      @extend %sombra-padrao;
+      font-weight: bold;
+    }
+
+    @media (max-width:980px){
+      font-size: 14px;
+      height: 250px;
+    }
   }
