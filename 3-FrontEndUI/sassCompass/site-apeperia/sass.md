@@ -18,5 +18,11 @@
 ## Aula 2 - Mixins
 - utilizado para evitar repetição de código.
 - sintaxe: `@mixin nome-do-mixin{ //css code }`
-- quando tem parametro: `@mixin nome-do-mixin(parametro){ //css code }`
 - como chamar o mixin: `@include nome-do-mixin;`
+- quando tem parametro: `@mixin nome-do-mixin(parametro){ //css code }`
+- como chamar o mixin: `@include nome-do-mixin(parametro);`
+- o parâmetro pode ser uma variável, declarada antes ou até no próprio mixin.
+- quando tem parametro: `@mixin nome-do-mixin($variavel: valor){ //css code usando $variavel }`
+- comentários do Sass `//feitos assim` não aparecem no css final
+- os comentários feitos no Sass `/* assim */` vão para o css final
+
