@@ -9,5 +9,5 @@
 
 ### Variáveis
 - mudar a extensão do arquivo para .scss em vez de .css
-$variavel: valor;
+- sintaxe: `$variavel: valor;`
 
