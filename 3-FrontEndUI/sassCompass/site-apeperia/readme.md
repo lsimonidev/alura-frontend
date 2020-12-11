@@ -26,3 +26,15 @@
 - comentários do Sass `//feitos assim` não aparecem no css final
 - os comentários feitos no Sass `/* assim */` vão para o css final
 
+## Aula 3 - Aninhamento
+- as tags podem ser aninhadas 
+- `&:hover` quando for para chamar o proprio seletor pai
+- cuidado para não abusar: não fazer muitos níveis encadeados, gera problemas de performance.
+
+## Aula 4 - Imports
+- o ideal é o sass ficar dividido em arquivos por assunto / área da página
+- como importar estes arquivos no sass principal: `@import 'pasta/arquivo'`
+- se for um arquivo sass não precisa colocar a extensão do arquivo (.scss)
+- caso o arquivo seja `.css` é melhor modificar para `.scss` antes de importar
+
+
