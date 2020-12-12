@@ -101,3 +101,18 @@ complement($color) //Returns the RGB complement of $color.
 ```sass
 @extend %placeholder-name
 ```
+
+## Class 7 - Media queries inside the selector
+```sass
+.container {
+  width: 940px;
+  margin: 0 auto;
+
+  @media (max-width: 980px) {
+      .container {
+          width: 90%;
+      margin: 10px;
+    }
+  }
+}
+```
