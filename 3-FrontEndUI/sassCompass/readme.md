@@ -24,7 +24,7 @@ $ compass -v
 - Change the file's extention to .scss instead of .css
 - how to declare a variable:
 ```sass
-$variavel: valor;
+$variavble: value;
 ```
 - compile 
 ```
@@ -35,7 +35,9 @@ $ sass --watch style.scss:style.css
 - it is used to avoid code repetition.
 - how it's done: 
 ``` sass
-@mixin nome-do-mixin{ //css code }
+@mixin nome-do-mixin{ 
+  //css code 
+}
 ```
 - como chamar o mixin: `@include nome-do-mixin;`
 - quando tem parametro: `@mixin nome-do-mixin(parametro){ //css code }`
