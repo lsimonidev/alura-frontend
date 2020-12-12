@@ -1,6 +1,6 @@
 # Sass
 
-## Aula 1 - First Contact
+## Class 1 - First Contact
 
 ### Set up
 1. [Install Ruby](http://rubyinstaller.org/downloads "Ruby download link") 
@@ -20,14 +20,23 @@ $ sass -v
 $ compass -v
 ```
 
-### Variáveis
-- mudar a extensão do arquivo para .scss em vez de .css
-- sintaxe: `$variavel: valor;`
-- compilar o sass: `sass --watch style.scss:style.css` no terminal
+### Variables
+- Change the file's extention to .scss instead of .css
+- how to declare a variable:
+```sass
+$variavel: valor;
+```
+- compile 
+```
+$ sass --watch style.scss:style.css
+```
 
-## Aula 2 - Mixins
-- utilizado para evitar repetição de código.
-- sintaxe: `@mixin nome-do-mixin{ //css code }`
+## Class 2 - Mixins
+- it is used to avoid code repetition.
+- how it's done: 
+``` sass
+@mixin nome-do-mixin{ //css code }
+```
 - como chamar o mixin: `@include nome-do-mixin;`
 - quando tem parametro: `@mixin nome-do-mixin(parametro){ //css code }`
 - como chamar o mixin: `@include nome-do-mixin(parametro);`
