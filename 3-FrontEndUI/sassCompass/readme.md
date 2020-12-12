@@ -24,7 +24,7 @@ $ compass -v
 - Change the file's extention to .scss instead of .css
 - how to declare a variable:
 ```sass
-$variavble: value
+$variable: value
 ```
 - compile 
 ```
@@ -35,27 +35,45 @@ $ sass --watch style.scss:style.css
 - it is used to avoid code repetition.
 - how it's done: 
 ``` sass
-@mixin nome-do-mixin{ 
+@mixin mixin-name{ 
   //code 
 }
 ```
-- como chamar o mixin: `@include nome-do-mixin;`
-- quando tem parametro: `@mixin nome-do-mixin(parametro){ //css code }`
-- como chamar o mixin: `@include nome-do-mixin(parametro);`
-- o parâmetro pode ser uma variável, declarada antes ou até no próprio mixin.
-- quando tem parametro: `@mixin nome-do-mixin($variavel: valor){ //css code usando $variavel }`
-- comentários do Sass `//feitos assim` não aparecem no css final
-- os comentários feitos no Sass `/* assim */` vão para o css final
+- how to call it: 
+```sass
+@include mixin-name;
+```
+- Parameters: 
+```sass
+@mixin mixin-name(parameter){ 
+  //code 
+}
 
-## Aula 3 - Aninhamento
-- as tags podem ser aninhadas 
-- `&:hover` quando for para chamar o proprio seletor pai
-- cuidado para não abusar: não fazer muitos níveis encadeados, gera problemas de performance.
+@include mixin-name(parameter);
+```
+- The parameter can be a variable, declared before or even on the mixin itself:
+```sass
+@mixin mixin-name($variable: value){ 
+  //code using $variavel 
+}
+```
+- comments on Sass are `//made like this` and they do not show up on the final css code.
+- but you can comment `/* like this */` and then they'll show up on the final css code.
+
+## Aula 3 - nesting
+- tags can be nested on sass 
+- `&:hover` when you want to call the parent in itself.
+- Attention: too many levels can lead to performance problems
 
 ## Aula 4 - Imports
-- o ideal é o sass ficar dividido em arquivos por assunto / área da página
-- como importar estes arquivos no sass principal: `@import 'pasta/arquivo'`
-- se for um arquivo sass não precisa colocar a extensão do arquivo (.scss)
-- caso o arquivo seja `.css` é melhor modificar para `.scss` antes de importar
+- The code should be spred in files by subject / section
+- how to import these files: 
+```
+@import 'folder/file'
+```
+- if it's a sass file there is no need to put the extention (.scss)
+- if it's a `.css` file, change it to `.scss` before importing.
+
+
 
 
