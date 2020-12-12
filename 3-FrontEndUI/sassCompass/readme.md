@@ -6,7 +6,7 @@
 1. Instalar o Ruby -> http://rubyinstaller.org/downloads
 2. marcar "add Ruby to your PATH"
 3. `ruby -v` no terminal, para verificar que ficou instalado
-`$ gem install sass`
+```$ gem install sass```
 5. `gem install compass` no terminal para instalar o Compass
 6. `sass -v` e `compass -v` no terminal para verificar a versão da instalação.
 
