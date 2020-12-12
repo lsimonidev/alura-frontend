@@ -41,7 +41,7 @@ $ sass --watch style.scss:style.css
 ```
 - how to call it: 
 ```sass
-@include mixin-name;
+@include mixin-name
 ```
 - Parameters: 
 ```sass
@@ -49,7 +49,7 @@ $ sass --watch style.scss:style.css
   //code 
 }
 
-@include mixin-name(parameter);
+@include mixin-name(parameter)
 ```
 - The parameter can be a variable, declared before or even on the mixin itself:
 ```sass
