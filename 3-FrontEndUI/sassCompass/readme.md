@@ -103,6 +103,8 @@ complement($color) //Returns the RGB complement of $color.
 ```
 
 ## Class 7 - Media queries inside the selector
+- sass allows us to put the media query inside the selector so we can see all the rules for that element in one place.
+- how to do it:
 ```sass
 .container {
   width: 940px;
