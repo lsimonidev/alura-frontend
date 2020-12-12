@@ -80,9 +80,9 @@ $ sass --watch style.scss:style.css
 - `lighten($color, 50)` makes the color 50% lighter
 - other color fuctions:
 ```sass
-adjust-hue(#6b717f, 60deg);
-desaturate($color, 10%);
-saturate($color, 10%);
+adjust-hue(#6b717f, 60deg)
+desaturate($color, 10%)
+saturate($color, 10%)
 complement($color) //Returns the RGB complement of $color.
 
 ```
