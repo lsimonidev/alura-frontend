@@ -90,6 +90,7 @@ complement($color) //Returns the RGB complement of $color.
 ## Class 6 - Extend and Placeholder
 
 - Placeholders avoid code repetition just like mixins but in the final CSS it puts all the selectors where it was used together while mixins just copy it's code into all the selectors where it was used.
+- placeholders do not accept variables or parameters
 - how to declare it:
 ```sass
 %placeholder-name {
