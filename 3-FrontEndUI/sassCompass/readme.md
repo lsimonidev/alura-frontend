@@ -97,6 +97,6 @@ complement($color) //Returns the RGB complement of $color.
 }
 ```
 - how to use it:
-```
+```sass
 @extend %placeholder-name
 ```
