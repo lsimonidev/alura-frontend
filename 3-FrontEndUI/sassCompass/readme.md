@@ -110,7 +110,7 @@ complement($color) //Returns the RGB complement of $color.
   width: 940px;
   margin: 0 auto;
 
-  @media (max-width: 980px) {
+   @media (max-width: $mobile-breakpoint) {
       .container {
           width: 90%;
       margin: 10px;
