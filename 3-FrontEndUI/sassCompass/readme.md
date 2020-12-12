@@ -118,3 +118,29 @@ complement($color) //Returns the RGB complement of $color.
   }
 }
 ```
+or, if you want your media query to be a variable:
+
+```sass
+.container {
+  width: 940px;
+  margin: 0 auto;
+
+   @media #{$mq-mobile} {
+      .container {
+          width: 90%;
+      margin: 10px;
+    }
+  }
+}
+```
+
+## class 8 - Compass
+- it's an open source css framework based in sass
+- [Install compass](http://compass-style.org/install/ "compass website"):
+```
+$ gem install compass
+$ cd "project path"
+$ compass create
+```
+- 
+
