@@ -12,7 +12,7 @@ $ ruby -v
 4. Install sass and Compass
 ```
 $ gem install sass
-gem install compass
+$ gem install compass
 ```
 6. Check the instalation:
 ```
