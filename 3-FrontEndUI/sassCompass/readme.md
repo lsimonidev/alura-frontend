@@ -92,7 +92,7 @@ complement($color) //Returns the RGB complement of $color.
 - Placeholders avoid code repetition just like mixins but in the final CSS it puts all the selectors where it was used together while mixins just copy it's code into all the selectors where it was used.
 - how to declare it:
 ```sass
-%placeholder-name{
+%placeholder-name {
   //code
 }
 ```
