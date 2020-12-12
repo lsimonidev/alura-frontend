@@ -1,16 +1,24 @@
 # Sass
 
-## Aula 1 - primeiro contato
+## Aula 1 - First Contact
 
-### Preparando o Ambiente
-1. Instalar o Ruby -> http://rubyinstaller.org/downloads
-2. marcar "add Ruby to your PATH"
-3. `ruby -v` no terminal, para verificar que ficou instalado
+### Set up
+1. [Install Ruby](http://rubyinstaller.org/downloads "Ruby download link") 
+2. Check "add Ruby to your PATH" option
+3. Check the instalation:
+```
+$ ruby -v
+```
+4. Install sass and Compass
 ```
 $ gem install sass
+gem install compass
 ```
-5. `gem install compass` no terminal para instalar o Compass
-6. `sass -v` e `compass -v` no terminal para verificar a versão da instalação.
+6. Check the instalation:
+```
+$ sass -v 
+$ compass -v
+```
 
 ### Variáveis
 - mudar a extensão do arquivo para .scss em vez de .css
