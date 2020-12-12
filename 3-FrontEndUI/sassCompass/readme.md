@@ -60,12 +60,12 @@ $ sass --watch style.scss:style.css
 - comments on Sass are `//made like this` and they do not show up on the final css code.
 - but you can comment `/* like this */` and then they'll show up on the final css code.
 
-## Aula 3 - nesting
+## Class 3 - nesting
 - tags can be nested on sass 
 - `&:hover` when you want to call the parent in itself.
 - Attention: too many levels can lead to performance problems
 
-## Aula 4 - Imports
+## Class 4 - Imports
 - The code should be spred in files by subject / section
 - how to import these files: 
 ```
@@ -74,6 +74,29 @@ $ sass --watch style.scss:style.css
 - if it's a sass file there is no need to put the extention (.scss)
 - if it's a `.css` file, change it to `.scss` before importing.
 
+## Class 5 - Color functions
 
+- `darken($color, 50)` makes the color 50% darker
+- `lighten($color, 50)` makes the color 50% lighter
+- other color fuctions:
+```sass
+adjust-hue(#6b717f, 60deg);
+desaturate($color, 10%);
+saturate($color, 10%);
+complement($color) //Returns the RGB complement of $color.
 
+```
 
+## Class 6 - Extend and Placeholder
+
+- Placeholders avoid code repetition just like mixins but in the final CSS it puts all the selectors where it was used together while mixins just copy it's code into all the selectors where it was used.
+- how to declare it:
+```sass
+%placeholder-name{
+  //code
+}
+```
+- how to use it:
+```
+@extend %placeholder-name
+```
