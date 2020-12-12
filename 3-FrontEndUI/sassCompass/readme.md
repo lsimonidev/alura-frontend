@@ -135,12 +135,46 @@ or, if you want your media query to be a variable:
 ```
 
 ## class 8 - Compass
-- it's an open source css framework based in sass
+- Compass is an open source sass based css framework.
+
+### Setup
 - [Install compass](http://compass-style.org/install/ "compass website"):
 ```
 $ gem install compass
 $ cd "project path"
 $ compass create
 ```
-- 
+- edit config.rb
+css_dir = "path to your css folder"
+sass_dir = "path yo tour sass folder"
+- watch for updates on sass file:
+```
+$ compass watch path/styles.scss
+```
+- compass automatically comments your css file, to change that, uncoment `line_comments = false` on config.rb
+- run compass watch again.
+
+### Hands on
+- import compass' css - [check documentation](http://compass-style.org/examples/).
+```sass
+@import "compass/css3";
+```
+- use it in your code:
+```
+@include compass-property-you-chose
+```
+
+### Automatic sprites
+1. put the images for the sprite inside a folder
+2. import the folder like this:
+```sass
+@import "sprite/*.png";
+```
+3. Compass will generate a new file with the sprite.
+4. make this include on the scss file you need the images to be:
+```sass
+@include all-folder-sprites;
+```
+where "folder" is the folder where your images to sprite are.
+This will generate new classes with each image of the folder.
 
