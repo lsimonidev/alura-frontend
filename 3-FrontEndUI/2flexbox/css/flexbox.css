@@ -9,13 +9,24 @@
     display: flex;
 }
 /************************************** NOSSOS CURSOS *****************************************/
+.conteudoPrincipal-cursos{
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.conteudoPrincipal-cursos-link{
+	width:20%;
+}
 
 /************************************** VANTAGENS ALURINHA *****************************************/
 
 
 /************************************** MAPA DE CURSOS *****************************************/
-
+.rodapePrincipal-navMap-list{
+	display: flex;
+	flex-flow: column wrap;
+	height: 250px;
+}
 
 /************************************** FOOTER *****************************************/
 .rodapePrincipal-patrocinadores .container{
