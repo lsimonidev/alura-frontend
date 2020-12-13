@@ -1,0 +1,41 @@
+/************************************** MENU HEADER *****************************************/
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+}
+/************************************** NOSSOS CURSOS *****************************************/
+
+
+/************************************** VANTAGENS ALURINHA *****************************************/
+
+
+/************************************** MAPA DE CURSOS *****************************************/
+
+
+/************************************** FOOTER *****************************************/
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+		align-items: center;
+		justify-content: space-between;
+}
+
+
+.rodapePrincipal-patrocinadores .container .rodapePrincipal-patrocinadores-list{
+    display: flex;
+		align-items: center;
+		justify-content: space-around;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm{
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+	display:flex;
+}
