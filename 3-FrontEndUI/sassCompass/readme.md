@@ -30,6 +30,7 @@ $variable: value
 ```
 $ sass --watch style.scss:style.css
 ```
+- if a variable is declared inside a selector, it will be visible only inside the selector.
 
 ## Class 2 - Mixins
 - it is used to avoid code repetition.
@@ -177,4 +178,21 @@ $ compass watch path/styles.scss
 ```
 where "folder" is the folder where your images to sprite are.
 This will generate new classes with each image of the folder.
+- [sprites tutorial](https://www.youtube.com/watch?v=Tl6bceyTjFw&ab_channel=LevelUpTuts)
 
+## Class 9 - math operations
+- Compass allows us to use math operations
+```compass
+font-size: 3 * $default-font-size; 
+```
+### Functions
+```compass
+@function($param){
+  @return result;
+}
+```
+- you can round values using `round()`
+
+## class 10 - Best Practices
+- always look the compiled css
+- %placeholders > @mixin

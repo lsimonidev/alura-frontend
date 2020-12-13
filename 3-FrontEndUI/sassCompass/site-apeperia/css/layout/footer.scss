@@ -28,8 +28,8 @@ footer {
   }
   
   footer .container {
-    padding-top: 3em;
-    height: 6.5em;
+    padding-top: multiply-by-font(3);
+    height: multiply-by-font(6.5);
     position: relative;
   }
   

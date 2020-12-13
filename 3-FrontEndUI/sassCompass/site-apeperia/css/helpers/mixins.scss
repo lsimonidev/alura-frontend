@@ -2,8 +2,9 @@
     -webkit-border-radius: $raio;
     -moz-border-radius: $raio;
     -o-border-radius: $raio;
-    border-radius: $raio;  
+    border-radius: $raio;
   }
+
   
 %image-replacement{
   text-indent: -9999px;
@@ -22,5 +23,8 @@
 	}
 }
 
+@function multiply-by-font($param){
+  @return $param * $default-font-size;
+}
 ////////////////////////////////////
 @import "compass/css3";

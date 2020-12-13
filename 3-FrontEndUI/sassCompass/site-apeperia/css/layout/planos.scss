@@ -1,38 +1,35 @@
 /** Planos **/
 .planos {
     background: $cor-fundo;
+    h2 {
+      color: $cor-clara;
+    }
   }
-  
-  .planos h2 {
-    color: $cor-clara;
-  }
-  
+    
   .plano {
     background: $cor-clara;
-    width: 18em;
+    width: multiply-by-font(18);
     display: inline-block;
     margin: 1em 0 0 1.4em;
     padding-bottom: 2em;
-  }
-  
-  .plano:hover {
-    background: #dedede;
-  }
-  
-  .plano h3 {
-    color: $cor-clara;
-    font-size: 1.8em;
-    background: $cor-destaque;
-    text-align: center;
-    height: 2em;
-    padding-top: .6em;
-    margin-top: 0;
-  }
-  
-  .plano div {
-    text-align: center;
-    color: $cor-destaque;
-    font-size: 2.75em;
+    &:hover {
+      background: #dedede;
+    }
+    h3 {
+      color: $cor-clara;
+      font-size: 1.8em;
+      background: $cor-destaque;
+      text-align: center;
+      height: 2em;
+      padding-top: .6em;
+      margin-top: 0;
+    }
+
+    div {
+      text-align: center;
+      color: $cor-destaque;
+      font-size: 2.75em;
+    }
   }
   
   .itens-plano {
@@ -48,24 +45,23 @@
      &:last-child {
         border: 0;
       }
+
+      button {
+        background: $cor-destaque;
+        border: 0;
+        color: $cor-clara;
+        width: 210px;
+        height: 38px;
+        font-size: 1.2em;
+        @include  border-radius(0.3em);
+        @include box-shadow(rgba(0, 0, 0, 0.6) 0 2px 6.65px);
+        margin-left: 2em;
+      }
     }
   
     span {
       float: right;
     }
-    
-  }
-  
-  .plano button {
-    background: $cor-destaque;
-    border: 0;
-    color: $cor-clara;
-    width: 210px;
-    height: 38px;
-    font-size: 1.2em;
-    @include  border-radius(0.3em);
-    @include box-shadow(rgba(0, 0, 0, 0.6) 0 2px 6.65px);
-    margin-left: 2em;
   }
   
   @include all-sprite-sprites;
