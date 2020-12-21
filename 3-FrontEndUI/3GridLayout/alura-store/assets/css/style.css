@@ -7,20 +7,26 @@
         "conteudo"
         "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 50px auto 10vh;
 }
 
 .cabecalho {
-    background-color: aquamarine;
+    display:flex;
+    align-items: center;
+    padding:0 2rem;
     grid-area: "cabecalho";
 }
  
 .conteudo {
-    background-color: plum;
     grid-area: "conteudo";
+    padding: 0 2rem;
 }
 
 .rodape {
-    background-color: paleturquoise;
     grid-area: "rodape";
+    background-color: #fdfdfd;
+    color: #333;
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
 }
