@@ -1,4 +1,4 @@
-.cabecalho__menu__lista{
+.menu__lista{
     display:flex;
     gap: 1.25rem;
     list-style-type: none;

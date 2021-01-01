@@ -1,14 +1,14 @@
-.cabecalho__menu__link{
+.menu__link{
     text-decoration: none;
     color: #808080; 
     text-transform: lowercase;
 }
 
-.cabecalho__menu__link.ativo{
+.menu__link.ativo{
     color: #333333;
     font-weight: bold;
 }
 
-.cabecalho__menu__link:hover{
+.menu__link:hover{
     text-decoration: underline;
 }

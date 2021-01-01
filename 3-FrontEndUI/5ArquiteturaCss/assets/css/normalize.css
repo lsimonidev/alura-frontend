@@ -21,7 +21,8 @@ html {
    */
 
 body {
-    margin: 0;
+    margin: 0 calc((100vw - 1281px)/2);
+    max-width: 1281px;
 }
 
 /**
