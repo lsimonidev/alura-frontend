@@ -7,3 +7,11 @@
     text-align: right;
     text-transform: lowercase;
 }
+
+@media screen and (max-width: 768px){
+    .rodape{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1.5625rem;
+    }
+}

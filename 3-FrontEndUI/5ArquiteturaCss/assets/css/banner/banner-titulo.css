@@ -9,6 +9,11 @@
     font-weight: 400;
     font-size: 5.0625rem;
     text-align: center;
-    text-shadow: 0 4px 4px rgba(0,0,0,0.75);
-    
+    text-shadow: 0 4px 4px rgba(0,0,0,0.75);   
+}
+
+@media screen and (max-width: 768px){
+    .banner__titulo{
+        font-size: 3.5rem;
+    }
 }
