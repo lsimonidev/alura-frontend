@@ -10,6 +10,6 @@
     .receitas{
         align-items: center;
         flex-direction: column;
-        padding: 1rem;
+        padding: 1.5625rem;
     }
 }
