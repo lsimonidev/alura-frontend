@@ -19,3 +19,6 @@ class NegociacaoController{
         console.log(negociacao);
     }
 }
+
+
+console.log(avaliacoes.filter((prova)=>prova.nota>=7).map((prova)=> prova.aluno.nome))
