@@ -18,7 +18,7 @@ export const handleForm = (evento) => {
     addTarefa(tarefa);
 }
 
-const addTarefa = (tarefa) => {
+export const addTarefa = (tarefa) => {
     //Cria item
     const item = document.createElement('li');
     item.innerHTML = `<p class="content"> ${tarefa.data} - ${tarefa.texto}</p>`;
