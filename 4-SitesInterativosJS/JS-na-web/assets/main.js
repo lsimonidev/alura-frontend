@@ -1,7 +1,7 @@
-import {handleForm} from './components/criaTarefa.js';
-import {carregaTarefa} from './components/carregaTarefa.js';
+import { addTarefa } from "./components/addTarefa.js";
+import { getTarefas } from './components/getTarefas.js';
 
 const button = document.querySelector('[data-form-button]');
-button.addEventListener('click', handleForm);
+button.addEventListener('click', addTarefa);
 
-carregaTarefa();
+getTarefas();
